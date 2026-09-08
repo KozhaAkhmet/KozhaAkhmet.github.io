@@ -1,8 +1,32 @@
 [
   {
-    "userId": 1,
-    "id": 1,
+    "id": "custom-diy-macropad",
     "title": "Custom DIY Macropad",
-    "body": "This is a custom macropad—a device that imitates keyboard keys and shortcut combinations. Built with a Raspberry Pi Pico, mechanical keyboard switches, diodes, and 3D printed parts, it allows users to assign custom shortcuts to execute commands across various applications. Devices like this are widely used by streamers, editors, and digital artists. Powered by CircuitPython, it offers a much more convenient development setup than C++. I built this unit as a birthday gift for a dear friend. Credit for the original software and 3D models goes to octosomething on printables.com."
+    "description": "A custom macropad device that imitates keyboard keys and shortcut combinations.",
+    "author": {
+      "name": "KozhaAkhmet",
+      "bio": "Hardware enthusiast and developer.",
+      "image": ""
+    },
+    "featuredImage": "/posts/macropad.jpg",
+    "intro": "Built with a Raspberry Pi Pico, mechanical keyboard switches, diodes, and 3D printed parts, this macropad allows users to assign custom shortcuts to execute commands across various applications.",
+    "contentBlocks": [
+      {
+        "heading": "Why build a Macropad?",
+        "text": "Devices like this are widely used by streamers, editors, and digital artists. Having dedicated hardware for shortcuts speeds up workflow and removes the need to memorize complex keybindings."
+      },
+      {
+        "heading": "Software & Tech Stack",
+        "text": "Powered by CircuitPython, it offers a much more convenient development setup than C++. Programming the board is as simple as saving a Python script to a USB drive."
+      }
+    ],
+    "galleryImages": [
+      "/posts/post-image-1.png",
+      "/posts/post-image-2.png",
+      "/posts/post-image-3.png",
+      "/posts/post-image-4.png"
+    ],
+    "breakoutImage": "/posts/post-image-2.png",
+    "conclusion": "I built this unit as a birthday gift for a dear friend. Credit for the original software and 3D models goes to octosomething on printables.com."
   }
 ]
