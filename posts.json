@@ -2,7 +2,7 @@
   {
     "userId": 1,
     "id": 1,
-    "title": "My Local Post Title",
-    "body": "This is the content of my local blog post."
+    "title": "Custom DIY Macropad",
+    "body": "This is a custom macropad—a device that imitates keyboard keys and shortcut combinations. Built with a Raspberry Pi Pico, mechanical keyboard switches, diodes, and 3D printed parts, it allows users to assign custom shortcuts to execute commands across various applications. Devices like this are widely used by streamers, editors, and digital artists. Powered by CircuitPython, it offers a much more convenient development setup than C++. I built this unit as a birthday gift for a dear friend. Credit for the original software and 3D models goes to octosomething on printables.com."
   }
 ]
