@@ -8,7 +8,7 @@
       "bio": "Hardware enthusiast and developer.",
       "image": ""
     },
-    "featuredImage": "/posts/macropad.jpg",
+    "featuredImage": "/blogs/macropad.jpg",
     "intro": "Built with a Raspberry Pi Pico, mechanical keyboard switches, diodes, and 3D printed parts, this macropad allows users to assign custom shortcuts to execute commands across various applications.",
     "contentBlocks": [
       {
@@ -20,13 +20,8 @@
         "text": "Powered by CircuitPython, it offers a much more convenient development setup than C++. Programming the board is as simple as saving a Python script to a USB drive."
       }
     ],
-    "galleryImages": [
-      "/posts/post-image-1.png",
-      "/posts/post-image-2.png",
-      "/posts/post-image-3.png",
-      "/posts/post-image-4.png"
-    ],
-    "breakoutImage": "/posts/post-image-2.png",
-    "conclusion": "I built this unit as a birthday gift for a dear friend. Credit for the original software and 3D models goes to octosomething on printables.com."
+    "galleryImages": [],
+    "breakoutImage": "",
+    "conclusion": "The software and 3D Models are developed by octosomething on printables.com."
   }
 ]
