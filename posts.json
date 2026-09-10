@@ -20,7 +20,7 @@
         "text": "Powered by CircuitPython, it offers a much more convenient development setup than C++. Programming the board is as simple as saving a Python script to a USB drive."
       }
     ],
-    "galleryImages": [],
+    "galleryImages": ["/blogs/macropad.jpg"],
     "breakoutImage": "",
     "conclusion": "The software and 3D Models are developed by octosomething on printables.com."
   }
