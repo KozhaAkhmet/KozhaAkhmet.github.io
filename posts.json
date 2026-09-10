@@ -21,7 +21,7 @@
       }
     ],
     "galleryImages": ["/blogs/macropad.jpg"],
-    "breakoutImage": "",
+    "breakoutImage": "/blogs/macropad.jpg",
     "conclusion": "The software and 3D Models are developed by octosomething on printables.com."
   }
 ]
