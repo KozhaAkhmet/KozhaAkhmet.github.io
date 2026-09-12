@@ -31,9 +31,10 @@ jobs:
     steps:
       - name: Checkout Main Repository
         uses: actions/checkout@v4
-        # Notice we removed 'submodules: recursive' here
+        with:
+          submodules: false
 
-      - name: Checkout Private Submodule
+      - name: Checkout Private Submodule Source
         uses: actions/checkout@v4
         with:
           repository: KozhaAkhmet/KozhaAkhmet.github.io.src
