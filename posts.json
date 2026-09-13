@@ -22,6 +22,20 @@
     ],
     "galleryImages": [],
     "breakoutImage": "/blogs/macropad.jpg",
-    "conclusion": "The software and 3D Models are developed by octosomething on printables.com."
+    "conclusion": "The software and 3D Models are developed by octosomething on printables.com.",
+    "references": [
+      {
+        "title": "Macropad by octosomething - Printables.com",
+        "url": "https://www.printables.com/@octosomething"
+      },
+      {
+        "title": "Raspberry Pi Pico Documentation",
+        "url": "https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html"
+      },
+      {
+        "title": "CircuitPython Documentation",
+        "url": "https://docs.circuitpython.org/"
+      }
+    ]
   }
 ]
