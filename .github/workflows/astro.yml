@@ -68,6 +68,14 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
+      - name: Lint and format check
+        # Report-only for now: the existing codebase has pre-existing lint/format
+        # issues that haven't been cleaned up yet, so this doesn't block the build.
+        continue-on-error: true
+        run: |
+          npm run lint
+          npm run format:check
+        working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
