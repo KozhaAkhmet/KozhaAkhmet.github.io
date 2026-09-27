@@ -37,5 +37,86 @@
         "url": "https://docs.circuitpython.org/"
       }
     ]
+  },
+  {
+    "id": "custom-3d-printer",
+    "title": "My Customized 3D Printer",
+    "description": "Two years of upgrades to an Ender 3 v2 NEO: direct drive extrusion, a belt-driven Z axis, custom firmware, remote control, and multi-material printing.",
+    "author": {
+      "name": "KozhaAkhmet",
+      "bio": "Hardware enthusiast and developer.",
+      "image": ""
+    },
+    "featuredImage": "/blogs/3d-printer-full.jpg",
+    "intro": "Handcrafting and DIY have always meant a lot to me. It started with Lego, then grew into experimenting on materials and electronics to satisfy the question of how and why things work. In high school I discovered 3D printing, and once I became a student I finally got my own printer, an Ender 3 v2 NEO that I still use today.",
+    "contentBlocks": [
+      {
+        "heading": "Two years of upgrades",
+        "text": "After printing toys for my nephews and getting comfortable with the basics, I started pushing the printer further. Over two years I replaced the extruder with a BMG direct drive system, swapped in an E3D V6 hotend, converted the Z axis to a belt-driven design, and compiled and flashed customized Marlin firmware. I added a Banana Pi single-board computer to control the printer and enabled remote access over Telegram and the local network."
+      },
+      {
+        "heading": "Calibration and multi-material printing",
+        "text": "I printed TPU, PETG, and ABS, each with dedicated pressure advance calibration for the custom hotend, and calibrated input shaping on the X and Y axes using an MPU6050 IMU. I also managed to get multi-color printing working with Sharpies, layering color changes into otherwise single-material prints."
+      },
+      {
+        "heading": "Mistakes along the way",
+        "text": "Not everything went smoothly. I once shorted the motherboard and tried to diagnose it by tracing the PCB design myself, but it was a dead end. In the end I replaced it with a newer board and reconfigured everything from scratch."
+      },
+      {
+        "heading": "From printing to designing",
+        "text": "Along the way I picked up Fusion 360 so I could design my own 3D models instead of only printing other people's. That combination of electronics, modeling, and 3D printing is what let me build my Wear Pico smart watch project."
+      }
+    ],
+    "galleryImages": [
+      "/blogs/3d-printer-belt-z-axis.jpg",
+      "/blogs/3d-printer-direct-drive-extruder.jpg",
+      "/blogs/3d-printer-sbc-hotend.jpg"
+    ],
+    "breakoutImage": "/blogs/3d-printer-full.jpg",
+    "conclusion": "This printer taught me how mechanical, electronic, and software systems bind together, and it still helps me create tools, enclosures, and robotics parts today. I'm grateful for the open-source community behind this technology; none of these upgrades would have been possible without their shared knowledge.",
+    "references": [
+      {
+        "title": "Belt-driven Z axis upgrade - Thingiverse",
+        "url": "https://www.thingiverse.com/thing:4243512"
+      },
+      {
+        "title": "3DPrintColorizer - Multi-color printing with Sharpies",
+        "url": "https://github.com/Sakati84/3DPrintColorizer"
+      },
+      {
+        "title": "Wear Pico - Smart watch project",
+        "url": "https://github.com/umutsevdi/wear-pico"
+      }
+    ]
+  },
+  {
+    "id": "breaking-circular-dependency-with-a-callback",
+    "title": "Breaking a Circular Dependency with a Callback",
+    "description": "How passing a single function as a callback resolved a circular dependency between a legacy integrator library and a new module, saving weeks of rework.",
+    "author": {
+      "name": "KozhaAkhmet",
+      "bio": "Software engineer.",
+      "image": ""
+    },
+    "featuredImage": "/blogs/callback-circular-dependency.png",
+    "intro": "I once faced a problem while adding support for a new integrator API alongside a legacy integration. The legacy integrator module was monolithic, compiled as a single static library together with the forms that used it, and it contained the most important and complex component: a document generator that would have taken about a month to reimplement.",
+    "contentBlocks": [
+      {
+        "heading": "The circular dependency",
+        "text": "The system was split into two parts: the main application, and a static library containing the legacy integrator and the forms that used it, linked together to produce the final application. Adding the new integrator as a separate static library would make it a third module, but the new integrator needed the generator from the legacy library, while the forms in that library needed the new integrator. Each module would have to include the other, a circular dependency."
+      },
+      {
+        "heading": "Asking what the dependency really was",
+        "text": "I took a step back and asked what the new module actually needed. The answer was just the generator method, not the whole library. So instead of including the library, the new integrator accepted the generator as a callback, passed in as a parameter. The new module no longer depended on the library, the dependency flowed in one direction only, and a month of reimplementation was avoided."
+      },
+      {
+        "heading": "The lesson",
+        "text": "Before reaching for a big refactor, look at what the dependency really is. Sometimes a module doesn't need another module, only one of its behaviors. Passing that behavior in as a callback, a small-scale form of dependency inversion, can turn a tangled circular dependency into a clean, one-directional one."
+      }
+    ],
+    "galleryImages": [],
+    "breakoutImage": "/blogs/callback-circular-dependency.png",
+    "conclusion": "A month of planned rework was avoided by isolating the one function the new module actually needed and passing it in as a callback, instead of linking against the whole legacy library.",
+    "references": []
   }
 ]
