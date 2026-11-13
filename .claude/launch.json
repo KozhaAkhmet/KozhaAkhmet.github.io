@@ -4,8 +4,28 @@
     {
       "name": "dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "KozhaAkhmet.github.io.src"],
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "KozhaAkhmet.github.io.src"
+      ],
       "port": 4321
+    },
+    {
+      "name": "accessible-astro-docs",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "../accessible-astro-docs",
+        "--",
+        "--port",
+        "4330",
+        "--force"
+      ],
+      "port": 4330
     }
   ]
 }

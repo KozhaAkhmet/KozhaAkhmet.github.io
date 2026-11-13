@@ -3,6 +3,7 @@
     "id": "custom-diy-macropad",
     "title": "Custom DIY Macropad",
     "description": "A custom macropad device that imitates keyboard keys and shortcut combinations.",
+    "date": "January 2026",
     "author": {
       "name": "KozhaAkhmet",
       "bio": "Hardware enthusiast and developer.",
@@ -42,6 +43,7 @@
     "id": "custom-3d-printer",
     "title": "My Customized 3D Printer",
     "description": "Two years of upgrades to an Ender 3 v2 NEO: direct drive extrusion, a belt-driven Z axis, custom firmware, remote control, and multi-material printing.",
+    "date": "January 2023 – December 2024",
     "author": {
       "name": "KozhaAkhmet",
       "bio": "Hardware enthusiast and developer.",
@@ -93,6 +95,7 @@
     "id": "breaking-circular-dependency-with-a-callback",
     "title": "Breaking a Circular Dependency with a Callback",
     "description": "How passing a single function as a callback resolved a circular dependency between a legacy integrator library and a new module, saving weeks of rework.",
+    "date": "September 2026",
     "author": {
       "name": "KozhaAkhmet",
       "bio": "Software engineer.",
