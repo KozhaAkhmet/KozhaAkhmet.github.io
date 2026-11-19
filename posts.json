@@ -121,5 +121,56 @@
     "breakoutImage": "/blogs/callback-circular-dependency.png",
     "conclusion": "A month of planned rework was avoided by isolating the one function the new module actually needed and passing it in as a callback, instead of linking against the whole legacy library.",
     "references": []
+  },
+  {
+    "id": "what-now-relearning-after-ai",
+    "title": "What Now? Relearning After AI",
+    "description": "The outcome of an interview had me question the way of studying",
+    "showDescription": false,
+    "date": "November 2026",
+    "author": {
+      "name": "KozhaAkhmet",
+      "bio": "Software engineer.",
+      "image": ""
+    },
+    "featuredImage": "/blogs/relearning-after-ai.jpg",
+    "contentBlocks": [
+      {
+        "heading": "",
+        "text": "One time, I had a technical interview for junior C++ position."
+      },
+      {
+        "heading": "",
+        "text": "The position was clearly for me, so I prepared for days to the interview. I was sure that I'm able to solve the questions and definitely have required experience for the job which is already shown on my personal projects."
+      },
+      {
+        "heading": "",
+        "text": "The interview had three stages:\n1. About Candidate\n2. Technical Questions\n3. Practical Assessment"
+      },
+      {
+        "heading": "",
+        "text": "At the interview, the first and second stages were good. By doing my best, I presented myself clearly by always referencing my projects and experience. But, I had a hard time with practical assessment."
+      },
+      {
+        "heading": "",
+        "text": "On the last assessment, the questions were so simple that I havent thought about it in a long time and my experience from different C++ language collided with standards which tied my hands. Also, \"No internet\" rule and anxiety at the end played badly on me. Unfortunately, as the result, I wasn't selected."
+      },
+      {
+        "heading": "",
+        "text": "There is another side of a coin. Two month before, I worked fully with Claude Code. I was skeptical at first and knew it could loosen practical grip. But not learning it would have been like not accepting the change that is clearly affecting every field. In those two month, I was able to keep my software concepts up-to-date and even learned new ones but, I believe, it affected my practical experience."
+      },
+      {
+        "heading": "",
+        "text": "To overcome this situation, I asked myself, ‘what now?’\n• Relearn and practice like it used to be with less or no AI.\n• Just accept that AI will handle these small things and keep going with only concepts."
+      },
+      {
+        "heading": "",
+        "text": "I leaned back and tried to evaluate the options and came to a middle ground. Use an AI that is not too skillful but knows your study material. Current LLMs and agents are too powerful, not flexible or configurable enough, and their prices keep rising. So, I decided to use a local LLM to create another way of relearning. It is private and more reliable tool that you own on your machine. I'm currently setting up mine using my PC, a Raspberry Pi and my book collection in RAG. I will publish the details of the project in the coming weeks and share my experience with it."
+      }
+    ],
+    "galleryImages": [
+      "/blogs/relearning-after-ai.jpg"
+    ],
+    "references": []
   }
 ]

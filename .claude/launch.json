@@ -13,6 +13,19 @@
       "port": 4321
     },
     {
+      "name": "posts-json",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8765", "--bind", "127.0.0.1"],
+      "port": 8765
+    },
+    {
+      "name": "dev-local-posts",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "KozhaAkhmet.github.io.src", "--", "--port", "4322"],
+      "env": { "BLOG_API_URL": "http://127.0.0.1:8765/posts.json" },
+      "port": 4322
+    },
+    {
       "name": "accessible-astro-docs",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
